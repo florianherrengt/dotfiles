@@ -17,9 +17,9 @@ alias j="jobs"
 alias pmd="cd ~/dev/tmp/placesmanager-desktop"
 
 # Shortcuts GIT
-alias gadd="git add -A"
-alias gcom="git commit -m"
-alias gpush="git push"
+alias ga="git add -A"
+alias gc="git commit -m"
+alias gp="git push"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
