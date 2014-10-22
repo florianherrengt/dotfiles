@@ -14,6 +14,7 @@ alias p="cd ~/Documents/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias pmd="cd ~/dev/tmp/placesmanager-desktop"
 
 # Shortcuts GIT
 alias gadd="git add -A"
