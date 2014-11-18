@@ -78,5 +78,8 @@ install zopfli
 
 install homebrew/versions/lua52
 
+install cmake
+install ctags-exuberant
+install git bash-completion
 # Remove outdated versions from the cellar
 cleanup

@@ -1,7 +1,7 @@
 " Use the Solarized Dark theme
 set background=dark
-colorscheme solarized
-
+colorscheme molokai
+let g:indent_guides_guide_size = 1
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -20,6 +20,11 @@ set gdefault
 set encoding=utf-8 nobomb
 " Change mapleader
 let mapleader=","
+nmap s <Plug>(easymotion-s)
+nmap s <Plug>(easymotion-s2)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <C-n> :NERDTreeToggle<CR>
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
@@ -103,3 +108,13 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
+
+execute pathogen#infect()
+filetype plugin indent on
+let g:CommandTAcceptSelectionMap = '<C-t>'
+let g:CommandTAcceptSelectionTabMap = '<CR>'
+let g:tagbar_usearrows = 1
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
+nnoremap <leader>+ :noh<CR>
+let NERDTreeMapOpenInTab='<ENTER>'
+g:nerdtree_tabs_autofind
