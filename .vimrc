@@ -115,6 +115,8 @@ let g:CommandTAcceptSelectionMap = '<C-t>'
 let g:CommandTAcceptSelectionTabMap = '<CR>'
 let g:tagbar_usearrows = 1
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+map <Leader>nn <plug>NERDTreeTabsFind<CR>
 nnoremap <leader>+ :noh<CR>
-let NERDTreeMapOpenInTab='<ENTER>'
-g:nerdtree_tabs_autofind
+let NERDTreeMapOpenInTab='<Right>'
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
