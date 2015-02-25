@@ -21,9 +21,12 @@ else
 fi;
 unset doIt;
 
-#cd ~/.vim/bundle/command-t/ruby/command-t
-#ruby extconf.rb
-#make
+git config --global credential.helper "cache --timeout=3600"
+git config --global credential.helper osxkeychain
 
-#cd ~/.vim/bundle/YouCompleteMe && ./install.sh
-#cd ~/.vim/bundle/tern_for_vim && npm install
+# cd ~/.vim/bundle/command-t/ruby/command-t
+# ruby extconf.rb
+# make
+
+# cd ~/.vim/bundle/YouCompleteMe && ./install.sh
+# cd ~/.vim/bundle/tern_for_vim && npm install

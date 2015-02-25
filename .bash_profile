@@ -1,5 +1,7 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+# change folder color
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

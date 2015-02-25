@@ -5,6 +5,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias dotfiles="cd ~/dotfiles"
 
 # Shortcuts
 alias d="cd ~/Documents/Dropbox"
@@ -15,11 +16,17 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias pmd="cd ~/dev/tmp/placesmanager-desktop"
+alias see="qlmanage -p"
+alias volume="osascript -e 'set volume "
+alias rmd="rm -rf"
 
 # Shortcuts GIT
 alias ga="git add -A"
 alias gc="git commit -m"
 alias gp="git push"
+
+#Mysql
+alias mysqlserver="sudo /usr/local/mysql/support-files/mysql.server"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
