@@ -19,6 +19,8 @@ alias pmd="cd ~/dev/tmp/placesmanager-desktop"
 alias see="qlmanage -p"
 alias volume="osascript -e 'set volume "
 alias rmd="rm -rf"
+alias local3="open /Applications/Google\ Chrome.app 'http://localhost:3000'"
+alias local8="open /Applications/Google\ Chrome.app 'http://localhost:8000'"
 
 # Shortcuts GIT
 alias ga="git add -A"
